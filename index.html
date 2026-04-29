@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EnclavAI — Privacy-first personal AI that lives entirely on your device. Your data. Your AI. Zero cloud." />
+  <meta name="theme-color" content="#0A0F1E" />
+  <meta property="og:title" content="EnclavAI — Your Data. Your AI. Your Device." />
+  <meta property="og:description" content="The first AI assistant that knows everything about you — without sharing anything about you." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amirkhanworks.github.io/EnclavAI" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EnclavAI — Your Data. Your AI. Your Device." />
+  <meta name="twitter:description" content="The first AI assistant that knows everything about you — without sharing anything about you." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>EnclavAI — Your Data. Your AI. Your Device.</title>
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ──────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="EnclavAI home">
+        <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 3 L35 9 L35 21 C35 30 28 36 20 38 C12 36 5 30 5 21 L5 9 Z" fill="none" stroke="#5C6BC0" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="20" cy="19" r="5" fill="none" stroke="#7986CB" stroke-width="1.8"/>
+          <rect x="17.5" y="22" width="5" height="7" rx="1.2" fill="#7986CB"/>
+        </svg>
+        <span class="nav-wordmark">EnclavAI</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#use-cases" class="nav-link">Use Cases</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#why-now" class="nav-link">Why Now</a>
+        <a href="#testimonials" class="nav-link">Feedback</a>
+        <!-- REPLACE THIS: swap investor@yourdomain.com with your real address -->
+        <a href="mailto:investor@yourdomain.com?subject=EnclavAI%20%E2%80%94%20Investor%20Deck%20Request" class="nav-link nav-link--investor">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex-shrink:0;"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+          Investor Deck
+        </a>
+        <a href="#waitlist" class="btn btn--nav">Join Waitlist</a>
+      </div>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#use-cases" class="nav-mobile-link">Use Cases</a>
+      <a href="#how-it-works" class="nav-mobile-link">How It Works</a>
+      <a href="#why-now" class="nav-mobile-link">Why Now</a>
+      <a href="#testimonials" class="nav-mobile-link">Feedback</a>
+      <!-- REPLACE THIS: swap investor@yourdomain.com with your real address -->
+      <a href="mailto:investor@yourdomain.com?subject=EnclavAI%20%E2%80%94%20Investor%20Deck%20Request" class="nav-mobile-link nav-mobile-link--accent">Investor Deck ↗</a>
+      <a href="#waitlist" class="btn btn--primary" style="margin-top:8px;">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ────────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="orb orb--1" aria-hidden="true"></div>
+    <div class="orb orb--2" aria-hidden="true"></div>
+    <div class="orb orb--3" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow reveal">
+          <span class="eyebrow-dot"></span>
+          Private Beta · Now Accepting Waitlist
+        </div>
+        <h1 class="hero-title reveal reveal--delay-1">
+          Your data.<br />Your AI.<br /><em>Your device.</em>
+        </h1>
+        <p class="hero-sub reveal reveal--delay-2">
+          EnclavAI aggregates all your personal data into an encrypted on-device vault and powers a local AI assistant that knows your finances, calendar, health, and inbox — without a single byte leaving your machine.
+        </p>
+        <div class="hero-ctas reveal reveal--delay-3">
+          <a href="#waitlist" class="btn btn--primary btn--lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Join the Waitlist
+          </a>
+          <a href="#use-cases" class="btn btn--ghost btn--lg">
+            See What It Can Do
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-trust reveal reveal--delay-4">
+          <span class="trust-badge">🔐 Zero cloud processing</span>
+          <span class="trust-badge">⚡ GDPR Art. 20 supported</span>
+          <span class="trust-badge">🧠 Runs entirely on-device</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal--delay-2">
+        <div class="vault-card">
+          <div class="vault-card__header">
+            <div class="vault-status">
+              <span class="vault-pulse"></span>
+              Vault Active
+            </div>
+            <span class="vault-badge">LOCAL</span>
+          </div>
+          <div class="vault-sources">
+            <div class="source-row">
+              <span class="source-icon">🏦</span>
+              <span class="source-name">Monzo + Starling</span>
+              <span class="source-sync">synced</span>
+            </div>
+            <div class="source-row">
+              <span class="source-icon">✉️</span>
+              <span class="source-name">Gmail</span>
+              <span class="source-sync">synced</span>
+            </div>
+            <div class="source-row">
+              <span class="source-icon">💚</span>
+              <span class="source-name">Apple Health</span>
+              <span class="source-sync">synced</span>
+            </div>
+            <div class="source-row">
+              <span class="source-icon">🎵</span>
+              <span class="source-name">Spotify</span>
+              <span class="source-sync">synced</span>
+            </div>
+            <div class="source-row">
+              <span class="source-icon">📅</span>
+              <span class="source-name">Google Calendar</span>
+              <span class="source-sync">synced</span>
+            </div>
+          </div>
+          <div class="vault-footer">
+            <div class="vault-stat">
+              <span class="vault-stat__num">6</span>
+              <span class="vault-stat__label">Sources</span>
+            </div>
+            <div class="vault-divider"></div>
+            <div class="vault-stat">
+              <span class="vault-stat__num">0</span>
+              <span class="vault-stat__label">Cloud uploads</span>
+            </div>
+            <div class="vault-divider"></div>
+            <div class="vault-stat">
+              <span class="vault-stat__num">AES-256</span>
+              <span class="vault-stat__label">Encrypted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MARKET OPPORTUNITY BANNER ───────────────────────────── -->
+  <div class="stat-banner">
+    <div class="stat-banner__inner">
+      <span class="stat-banner__icon" aria-hidden="true">◆</span>
+      <p class="stat-banner__text">
+        <strong>4.8 billion people</strong> share personal data daily with platforms that own it.
+        <em>EnclavAI gives it back.</em>
+      </p>
+      <span class="stat-banner__icon" aria-hidden="true">◆</span>
+      <p class="stat-banner__subtext">Global personal data market: <strong>$257B</strong> and growing</p>
+      <span class="stat-banner__icon" aria-hidden="true">◆</span>
+    </div>
+  </div>
+
+  <!-- ─── PROBLEM SECTION ─────────────────────────────────────── -->
+  <section id="problem" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The Problem</span>
+        <h2 class="section-title">Your data is everywhere.<br />Your AI is nowhere.</h2>
+        <p class="section-sub">Three painful realities no one is solving at once.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="problem-card reveal reveal--delay-1">
+          <div class="problem-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>
+            </svg>
+          </div>
+          <div class="problem-card__stat">40+</div>
+          <h3 class="problem-card__title">Apps hold your data</h3>
+          <p class="problem-card__body">The average person's data is fragmented across 40+ services. Your AI assistant can access exactly zero of them. You get generic answers to deeply personal questions.</p>
+        </div>
+
+        <div class="problem-card reveal reveal--delay-2">
+          <div class="problem-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <div class="problem-card__stat">87%</div>
+          <h3 class="problem-card__title">Of AI assistants phone home</h3>
+          <p class="problem-card__body">87% of AI assistants send your conversations to cloud servers. Every query you make trains their model, enriches their datasets, and puts your private thoughts at risk.</p>
+        </div>
+
+        <div class="problem-card reveal reveal--delay-3">
+          <div class="problem-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <div class="problem-card__stat">£35+</div>
+          <h3 class="problem-card__title">Is your annual data value</h3>
+          <p class="problem-card__body">Data brokers earn over £35 per person annually selling your behavioural data. You generate it, they profit from it, and you receive nothing — not even visibility into what they hold.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── USE CASES SECTION ────────────────────────────────────── -->
+  <section id="use-cases" class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Real-Life Examples</span>
+        <h2 class="section-title">What you can actually ask.</h2>
+        <p class="section-sub">EnclavAI unifies your finances, calendar, health, and email into one private intelligence layer. Here's what that looks like in practice.</p>
+      </div>
+
+      <div class="use-cases-grid">
+
+        <div class="use-case-card reveal reveal--delay-1">
+          <div class="use-case-card__header">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <div class="use-case-category">Finances</div>
+          </div>
+          <div class="use-case-query">"Can I afford a holiday in June?"</div>
+          <div class="use-case-response">
+            <div class="use-case-response__label">EnclavAI checks across your vault:</div>
+            <div class="use-case-bullets">
+              <span>💰 Current balances across all your accounts</span>
+              <span>📊 Committed outgoings to end of May</span>
+              <span>✈️ Your last comparable travel spend</span>
+              <span>📉 Projected free cash by June 1st</span>
+            </div>
+          </div>
+          <div class="use-case-tag use-case-tag--finance">Monzo · Starling · HSBC · Barclays</div>
+        </div>
+
+        <div class="use-case-card reveal reveal--delay-2">
+          <div class="use-case-card__header">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <div class="use-case-category">Calendar</div>
+          </div>
+          <div class="use-case-query">"Am I overcommitted next week?"</div>
+          <div class="use-case-response">
+            <div class="use-case-response__label">EnclavAI checks across your vault:</div>
+            <div class="use-case-bullets">
+              <span>📅 All meetings, travel, and commitments</span>
+              <span>⏱️ Actual focus time vs meeting load ratio</span>
+              <span>😓 Patterns from past over-scheduled weeks</span>
+              <span>🔔 Deadlines pulled from your inbox</span>
+            </div>
+          </div>
+          <div class="use-case-tag use-case-tag--calendar">Google Calendar · Outlook · Apple Calendar</div>
+        </div>
+
+        <div class="use-case-card reveal reveal--delay-3">
+          <div class="use-case-card__header">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <div class="use-case-category">Health</div>
+          </div>
+          <div class="use-case-query">"How has my sleep affected my focus?"</div>
+          <div class="use-case-response">
+            <div class="use-case-response__label">EnclavAI checks across your vault:</div>
+            <div class="use-case-bullets">
+              <span>🛌 Sleep data from the past 90 days</span>
+              <span>📧 Email response times as output proxy</span>
+              <span>🏃 Exercise frequency and active minutes</span>
+              <span>📈 Correlation patterns across all three</span>
+            </div>
+          </div>
+          <div class="use-case-tag use-case-tag--health">Apple Health · Fitbit · Strava · Oura</div>
+        </div>
+
+        <div class="use-case-card reveal reveal--delay-1">
+          <div class="use-case-card__header">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="use-case-category">Email</div>
+          </div>
+          <div class="use-case-query">"What important emails have I missed?"</div>
+          <div class="use-case-response">
+            <div class="use-case-response__label">EnclavAI checks across your vault:</div>
+            <div class="use-case-bullets">
+              <span>📬 Unread threads older than 7 days</span>
+              <span>🔑 Key contacts with unanswered messages</span>
+              <span>📋 Action items and deadlines in threads</span>
+              <span>⚡ Urgency signals from subject + sender data</span>
+            </div>
+          </div>
+          <div class="use-case-tag use-case-tag--email">Gmail · Outlook · Apple Mail</div>
+        </div>
+
+      </div>
+
+      <div class="use-cases-footer reveal">
+        <div class="use-cases-privacy-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          All queries processed entirely on your device. Your data never leaves.
+        </div>
+        <a href="#demo" class="btn btn--ghost">
+          Watch the demo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCT DEMO SECTION ────────────────────────────────── -->
+  <section id="demo" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Product Concept Demo</span>
+        <h2 class="section-title">Ask anything about your life.<br />Get answers from your data.</h2>
+        <p class="section-sub">This is what a real conversation with EnclavAI looks like.</p>
+      </div>
+
+      <div class="demo-wrapper reveal">
+        <div class="demo-window">
+          <div class="demo-chrome">
+            <div class="demo-dots">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+            </div>
+            <div class="demo-title-bar">
+              <svg width="14" height="14" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M20 3 L35 9 L35 21 C35 30 28 36 20 38 C12 36 5 30 5 21 L5 9 Z" fill="none" stroke="#5C6BC0" stroke-width="2.5" stroke-linejoin="round"/>
+                <circle cx="20" cy="19" r="5" fill="none" stroke="#7986CB" stroke-width="2"/>
+                <rect x="17.5" y="22" width="5" height="7" rx="1.2" fill="#7986CB"/>
+              </svg>
+              EnclavAI · Local · Private
+            </div>
+            <span class="demo-concept-badge">CONCEPT DEMO</span>
+          </div>
+
+          <div class="demo-vault-bar">
+            <span class="vault-pulse--small"></span>
+            Vault active · 6 sources connected · Last sync: 2h ago · <strong>All processing local</strong>
+          </div>
+
+          <div class="demo-messages" id="demo-messages">
+            <div class="demo-welcome" id="demo-welcome">
+              <div class="demo-welcome-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 3 L35 9 L35 21 C35 30 28 36 20 38 C12 36 5 30 5 21 L5 9 Z" fill="none" stroke="#5C6BC0" stroke-width="2" stroke-linejoin="round"/>
+                  <circle cx="20" cy="19" r="5" fill="none" stroke="#7986CB" stroke-width="1.8"/>
+                  <rect x="17.5" y="22" width="5" height="7" rx="1.2" fill="#7986CB"/>
+                </svg>
+              </div>
+              <p class="demo-welcome-text">Try a sample question below to see how EnclavAI responds using your personal data.</p>
+              <button class="demo-sample-btn" id="demo-ask-btn">
+                "Can I afford a holiday in June?"
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="demo-input-row">
+            <input class="demo-input" type="text" placeholder="Ask anything about your finances, health, plans…" disabled aria-label="Demo input — click the sample question above" />
+            <button class="demo-send" disabled aria-label="Send">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ─────────────────────────────────────────── -->
+  <section id="how-it-works" class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Three steps to a smarter,<br />private life.</h2>
+      </div>
+
+      <div class="steps-wrapper">
+        <div class="step reveal reveal--delay-1">
+          <div class="step-number">01</div>
+          <div class="step-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Connect your accounts</h3>
+          <p class="step-body">Link your bank, Gmail, Spotify, Apple Health, and more. EnclavAI guides you to request your own data from each service using your GDPR portability rights — through your own authenticated session, with no credential storage.</p>
+          <div class="step-tags">
+            <span class="tag">Monzo</span><span class="tag">Gmail</span>
+            <span class="tag">Spotify</span><span class="tag">Strava</span>
+            <span class="tag">+30 more</span>
+          </div>
+        </div>
+
+        <div class="step-connector" aria-hidden="true">
+          <div class="connector-line"></div>
+          <svg class="connector-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(92,107,192,0.5)" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+
+        <div class="step reveal reveal--delay-2">
+          <div class="step-number">02</div>
+          <div class="step-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Encrypted on-device vault</h3>
+          <p class="step-body">Your data is normalised, encrypted with AES-256, and stored in a local vault on your device. It never touches a server. No one — not even us — can access it. The key stays with you.</p>
+          <div class="step-security-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            AES-256 · Argon2id key derivation · Zero cloud writes
+          </div>
+        </div>
+
+        <div class="step-connector" aria-hidden="true">
+          <div class="connector-line"></div>
+          <svg class="connector-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(92,107,192,0.5)" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+
+        <div class="step reveal reveal--delay-3">
+          <div class="step-number">03</div>
+          <div class="step-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Ask your AI anything — privately</h3>
+          <p class="step-body">A small, quantised language model runs entirely on your CPU. It reads from your vault to answer deeply personal questions about your money, health, schedule, and habits. Zero cloud. Zero compromise.</p>
+          <div class="step-model-badge">
+            <span class="model-dot"></span>
+            Phi-3.5-mini · Llama 3.2 · Runs locally on 8GB RAM
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY NOW ───────────────────────────────────────────────── -->
+  <section id="why-now" class="section section--tinted">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why Now</span>
+        <h2 class="section-title">Three forces converging.<br />One perfect moment.</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal reveal--delay-1">
+          <div class="why-card__icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/>
+            </svg>
+          </div>
+          <div class="why-card__number">01</div>
+          <h3 class="why-card__title">GDPR Art. 20 — Your portability right, activated</h3>
+          <p class="why-card__body">EU and UK residents have the legal right to receive their personal data in a machine-readable format. EnclavAI helps users exercise this existing right through their own authenticated sessions — keeping the individual firmly in control of their own data.</p>
+          <div class="why-card__tag">Legal foundation secured</div>
+        </div>
+
+        <div class="why-card reveal reveal--delay-2">
+          <div class="why-card__icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div class="why-card__number">02</div>
+          <h3 class="why-card__title">Local LLMs are finally consumer-ready</h3>
+          <p class="why-card__body">Models like Phi-3.5-mini and Llama 3.2 run on an 8GB MacBook with acceptable performance. For the first time in history, a capable AI assistant can live entirely on a consumer laptop — no GPU required.</p>
+          <div class="why-card__tag">Technical barrier crossed</div>
+        </div>
+
+        <div class="why-card reveal reveal--delay-3">
+          <div class="why-card__icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="1.8">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="why-card__number">03</div>
+          <h3 class="why-card__title">Trust in Big Tech has collapsed</h3>
+          <p class="why-card__body">79% of consumers are now concerned about how companies use their personal data. Post-Cambridge Analytica and repeated AI training data scandals, a generation is actively seeking privacy-first alternatives.</p>
+          <div class="why-card__tag">Cultural moment arrived</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EARLY FEEDBACK ───────────────────────────────────────── -->
+  <!-- Testimonials are from early product conversations. Names are withheld at request. -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Early Conversations</span>
+        <h2 class="section-title">What we're hearing.</h2>
+        <p class="section-sub">Reactions from early product conversations with prospective users and investors. Names withheld at request.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal--delay-1">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <p class="testimonial-text">I've wanted something like this for years. An AI that actually knows my finances without uploading them to a server — that's the product I've been screaming into the void about. Take my money.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar author-avatar--1">ST</div>
+            <div>
+              <div class="author-name">Sarah T.</div>
+              <div class="author-role">Senior Product Manager, London</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal--delay-2">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <p class="testimonial-text">As someone who's spent the last three years opting out of every data broker I could find, EnclavAI is the tool I've been waiting for. The GDPR portability angle is genuinely smart — it turns regulation into a feature.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar author-avatar--2">DM</div>
+            <div>
+              <div class="author-name">David M.</div>
+              <div class="author-role">Software Engineer, Berlin</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal--delay-3">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <p class="testimonial-text">The privacy-first angle is exactly what this AI space is missing. Every other player is racing to own your data. EnclavAI is taking the opposite bet — and in this regulatory climate, that's a very smart place to be.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar author-avatar--3">AR</div>
+            <div>
+              <div class="author-name">Alex R.</div>
+              <div class="author-role">Angel Investor, Fintech & Privacy Tech</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INVESTOR CTA STRIP ───────────────────────────────────── -->
+  <div class="investor-strip">
+    <div class="investor-strip__inner">
+      <div class="investor-strip__text">
+        <div class="investor-strip__eyebrow">For Investors</div>
+        <h3 class="investor-strip__title">Backing the privacy-first AI moment.</h3>
+        <p class="investor-strip__sub">EnclavAI is raising its pre-seed round. We're talking to angels and early-stage funds who believe the next wave of AI is local, private, and user-owned.</p>
+        <ul class="investor-strip__points">
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Full PRD, financial model, and technical architecture available
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            MVP underway — 3-engineer team, 6-month build timeline
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C6BC0" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            UK-based, GDPR-native, targeting 100K MAU by Month 24
+          </li>
+        </ul>
+      </div>
+      <div class="investor-strip__cta">
+        <!-- REPLACE THIS: swap investor@yourdomain.com with your real address -->
+        <a href="mailto:investor@yourdomain.com?subject=EnclavAI%20%E2%80%94%20Investor%20Deck%20Request" class="btn btn--investor-cta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+          Request the Investor Deck
+        </a>
+        <p class="investor-strip__cta-sub">Typically respond within 24 hours</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── WAITLIST / FORM ──────────────────────────────────────── -->
+  <section id="waitlist" class="section section--cta">
+    <div class="waitlist-orb waitlist-orb--1" aria-hidden="true"></div>
+    <div class="waitlist-orb waitlist-orb--2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="waitlist-inner reveal">
+        <span class="section-label">Early Access</span>
+        <h2 class="waitlist-title">Be First.<br /><em>Stay Private.</em></h2>
+        <p class="waitlist-sub">Join the waitlist for early access to EnclavAI. Whether you're a curious user, investor, or potential partner — we want to hear from you.</p>
+
+        <div class="waitlist-badges">
+          <span class="waitlist-badge">🔐 Your email is only used to notify you</span>
+          <span class="waitlist-badge">🚫 No spam, ever</span>
+        </div>
+
+        <div class="form-wrapper">
+          <iframe
+            data-tally-src="https://tally.so/embed/Bzbye1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="400"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="EnclavAI Early Access Waitlist"
+            id="tally-iframe"
+          ></iframe>
+        </div>
+
+        <p class="waitlist-note">Already on the list? We'll reach out before public launch with early access credentials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="EnclavAI">
+            <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 3 L35 9 L35 21 C35 30 28 36 20 38 C12 36 5 30 5 21 L5 9 Z" fill="none" stroke="#5C6BC0" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="20" cy="19" r="5" fill="none" stroke="#7986CB" stroke-width="1.8"/>
+              <rect x="17.5" y="22" width="5" height="7" rx="1.2" fill="#7986CB"/>
+            </svg>
+            <span class="nav-wordmark">EnclavAI</span>
+          </a>
+          <p class="footer-tagline">Built with privacy by design.</p>
+          <p class="footer-origin">London, UK · 2026</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Product</h4>
+          <a href="#use-cases" class="footer-link">Use Cases</a>
+          <a href="#how-it-works" class="footer-link">How It Works</a>
+          <a href="#why-now" class="footer-link">Why Now</a>
+          <a href="#demo" class="footer-link">Demo</a>
+          <a href="#waitlist" class="footer-link">Join Waitlist</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Company</h4>
+          <!-- REPLACE THIS: link to your About page -->
+          <a href="#" class="footer-link">About</a>
+          <!-- REPLACE THIS: link to your privacy policy page -->
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <!-- REPLACE THIS: update contact email -->
+          <a href="mailto:hello@enclavai.app" class="footer-link">Contact</a>
+          <!-- REPLACE THIS: swap investor@yourdomain.com -->
+          <a href="mailto:investor@yourdomain.com?subject=EnclavAI%20%E2%80%94%20Investor%20Deck" class="footer-link footer-link--accent">Investor Deck ↗</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Founders</h4>
+          <a href="https://www.linkedin.com/in/aaamirkhan/" target="_blank" rel="noopener noreferrer" class="footer-link footer-founder-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            Amir Khan
+          </a>
+          <a href="https://www.linkedin.com/in/vaibhav-dureja-5b7110123/" target="_blank" rel="noopener noreferrer" class="footer-link footer-founder-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            Vaibhav Dureja
+          </a>
+          <a href="https://github.com/amirkhanworks/EnclavAI" target="_blank" rel="noopener noreferrer" class="footer-link footer-founder-link" style="margin-top:8px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">© 2026 EnclavAI. All rights reserved. · <em>No user data was harmed in the making of this website.</em></p>
+        <p class="footer-privacy-note">🔐 This site uses no trackers, no cookies, no analytics. We practise what we preach.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tally embed loader -->
+  <script>
+    var d = document, w = "https://tally.so/widgets/embed.js",
+        v = function () {
+          "undefined" != typeof Tally
+            ? Tally.loadEmbeds()
+            : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) { e.src = e.dataset.tallySrc; });
+        };
+    if ("undefined" != typeof Tally) { v(); }
+    else if (d.querySelector('script[src="' + w + '"]') == null) {
+      var s = d.createElement("script"); s.src = w; s.onload = v; s.onerror = v; d.body.appendChild(s);
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
